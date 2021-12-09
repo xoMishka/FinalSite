@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/*
+    Final Site
+    By: Amber Jeffers
+    Date: December 9, 2021
+*/
+
+/* Global */
+::grammar-error { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+/* Layout */
+header { grid-area: header; }
+main { grid-area: main; }
+footer { grid-area: footer; }
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    margin: 0;
+}
+
+/* Nav */
+.navbar {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+.spacing {
+    flex: 1;
+}
+
+.navbar li {
+    display: block;
+    padding: .5rem 1rem;
+    line-height: 1.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    text-align: center;
+}
