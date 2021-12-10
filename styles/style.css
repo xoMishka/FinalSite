@@ -129,6 +129,12 @@ footer {
 .project-1 { grid-area: p1; }
 .project-2 { grid-area: p2; }
 
+#portfolio h1 {
+    text-align: center;
+    color: #F2BDCB;
+    font-size: 3rem;
+}
+
 #portfolio {
     height: 100vh;
     display: grid;
