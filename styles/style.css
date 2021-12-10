@@ -63,6 +63,15 @@ body {
     color: #F299A9;
 }
 
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #254559;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
 /******** HOME ********/
 /* Main */
 .picture { grid-area: picture; }
@@ -102,15 +111,6 @@ body {
     font-size: 1.5rem;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #254559;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
 
 /******** RESUME ********/
 #resume {
@@ -126,16 +126,31 @@ footer {
 }
 
 /******** PORTFOLIO ********/
+.project-1 { grid-area: p1; }
+.project-2 { grid-area: p2; }
+
 #portfolio {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-        ". . . .";
-    gap: 1rem;
+        ". p1 p2 .";
+    gap: 20rem;
     margin-top: 3rem;
     background-color: #254559;
+    align-items: center;
+}
+
+#portfolio img {
+    width: 400px;
+    height: 400px;
+}
+
+#portfolio p {
+    text-align: center;
+    margin-top: 2rem;
+    color: #F2F2F2;
 }
 
 /******** CONTACT ********/
@@ -147,7 +162,6 @@ footer {
     background-color: #254559;
 }
 
-/* Form */
 #contact h1 {
     text-align: center;
     color: #F2BDCB;
@@ -163,6 +177,7 @@ footer {
     width: 900px;
     color: #254559;
     font-size: 1.25rem;
+    border-radius: 3px;
 }
 
 .space {
