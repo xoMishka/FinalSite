@@ -148,8 +148,66 @@ footer {
 }
 
 /* Form */
+#contact h1 {
+    text-align: center;
+    color: #F2BDCB;
+    font-size: 3rem;
+}
+
 .form {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10rem;
+    margin-top: -10rem;
+    background-color: #F2F2F2;
+    height: 500px;
+    width: 900px;
+    color: #254559;
+    font-size: 1.25rem;
+}
+
+.space {
+    margin-top: 3rem;
+}
+
+label, input, textarea {
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+}
+
+input:not(.submit) {
+    width: 250px;
+    height: 30px;
+    border: 1px solid #254559;
+}
+
+textarea {
+    width: 600px;
+    height: 200px;
+    border: 1px solid #254559;
+}
+
+input:hover, textarea:hover {
+    border: 2px solid #254559;
+}
+
+input:focus, textarea:focus {
+    outline: none !important;
+    border: 2px solid #F299A9;
+}
+
+#submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0;
+    width: 130px;
+    height: 40px;
+    background-color: #254559;
+    color: #F2BDCB;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#submit:hover {
+    border: 2px solid #F2BDCB;
 }
