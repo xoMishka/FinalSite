@@ -113,16 +113,66 @@ footer {
 
 
 /******** RESUME ********/
+.rh { grid-area: rh; }
+.left-side { grid-area: ls; }
+.right-side { grid-area: rs; }
+
 #resume {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
-        ". . . .";
-    gap: 1rem;
+        "rh rh"
+        "ls rs";
     margin-top: 3rem;
     background-color: #254559;
+}
+
+.rh {
+    text-align: center;
+    color: #F2BDCB;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #F2BDCB;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+strong {
+    color: #F2BDCB;
+}
+
+small {
+    font-style: italic;
+}
+
+.left-side {
+    margin-left: 5rem;
+    color: #F2F2F2;
+}
+
+.right-side {
+    margin-right: 5rem;
+    color: #F2F2F2;
+}
+
+.contact {
+    margin-bottom: 2rem;
+}
+
+.contact a {
+    color: #F2F2F2;
+    font-style: italic;
+}
+
+.contact a:hover {
+    color: #F2BDCB;
 }
 
 /******** PORTFOLIO ********/
